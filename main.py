@@ -1,8 +1,10 @@
 import requests
 
-url = 'https://hooks.slack.com/services/services/T59Q8770T/B62RB8DEJ/mgtQWUwwoBGUQ0WqFe1KUV0O'
+url = 'https://hooks.slack.com/services/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'
 
 text = "Someone is at the :door:! (624)"
 
 def handler(event, context):
     requests.post(url, json={"text": text})
+
+handler(None,None)
