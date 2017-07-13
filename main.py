@@ -6,5 +6,3 @@ text = "<!channel> Someone is at the :door:! (624)"
 
 def handler(event, context):
     requests.post(url, json={"text": text})
-
-handler(None,None)
